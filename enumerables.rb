@@ -11,6 +11,17 @@ def print_odd_indexed_integers(array)
   odd
 end
 
+#Calcula el minimo comun divisor de dos numeros
+#Recive como parametros dos enteros n y m.
+#Regresa un entero que es el minimo comun divisor de n y m
+def mcm(n, m):
+    mult_n, i= n, 1
+    while (True):
+        if(mult_n % m == 0):
+            return mult_n
+        mult_n = n * i
+        i += 1
+
 # Dado un array de números regresa un array con
 #solo los numeros impares
 # Utiliza: Enumerable#select
