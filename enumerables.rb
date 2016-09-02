@@ -11,6 +11,21 @@ def print_odd_indexed_integers(array)
   odd
 end
 
+#Calcula fibonacci de forma recursiva con python
+def fibonacci_recursivo(n):
+  if(n == 1):
+    return 1
+  if(n == 0):
+    return 1
+  return (fibonacci(n-1) + fibonacci(n-2))
+
+#Calcula fibonacci de forma iterativa
+def fibonacci_iterativo(n):
+  a, b = 0, 1
+  for i in range(0, n):
+    a, b = b, a + b
+  return a
+
 #Calcula el minimo comun divisor de dos numeros
 #Recive como parametros dos enteros n y m.
 #Regresa un entero que es el minimo comun divisor de n y m
