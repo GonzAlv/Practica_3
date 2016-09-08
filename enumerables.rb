@@ -1,3 +1,6 @@
+#Estoy editando esto para probar git
+
+
 # Dado un array de números imprime únicamente los
 #elementos que contienen un indice impar
 # Utiliza: Enumerable#each_with_index
